@@ -1,0 +1,30 @@
+# Component Info
+info:
+  component: Config-Server
+
+#HTTP SERVER
+server:
+  port: 8888
+
+spring:
+  # Spring cloud config server Repository
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/z3tta-c0d3r/SpringCloudConfig-GitRepository
+
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: "health,info"
+  endpoint:
+    health:
+      show-details: always
+  security:
+    enabled: false
+# Spring properties
+profiles:
+  active: dev
+g
