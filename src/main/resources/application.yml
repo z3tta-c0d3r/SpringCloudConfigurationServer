@@ -27,4 +27,3 @@ management:
 # Spring properties
 profiles:
   active: dev
-g
